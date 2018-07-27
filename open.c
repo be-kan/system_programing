@@ -8,12 +8,12 @@
 
 int main(void)
 {
-    int fd;
-    fd = open("sample.txt", O_RDONLY);
-    if(fd < 0){
-        printf("Error: open(%d) %s\n", errno, strerror(errno));
-        return(-1);
-    }
+  int fd;
+  fd = open("sample.txt", O_RDONLY);
+  if(fd < 0){
+      printf("Error: open(%d) %s\n", errno, strerror(errno));
+      return(-1);
+  }
 
-    return(0);
+  return(0);
 }
